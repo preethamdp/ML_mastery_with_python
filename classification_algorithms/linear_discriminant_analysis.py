@@ -1,7 +1,7 @@
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearDiscriminantAnalysis
 import pickle
 data = pickle.load(open("./../pickle_files/diabetes_dataset.pkl","rb"))
 array = data.values
